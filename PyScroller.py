@@ -20,62 +20,42 @@ pause_keeper = 0
 game_over = False
 
 #import assets
-bg_img = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\sky1.png')
+bg_img = pygame.image.load(r'PyScroller_Assets\sky1.png')
 bg_img = pygame.transform.scale(bg_img, (600, 600))
-grass = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\Tile1.png')
-lt_grass = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\Tile2.png')
-rt_grass = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\Tile3.png')
-up_grass = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\Tile4.png')
-dn_grass = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\Tile5.png')
-lone_grass = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\Tile6.png')
-float_grass = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\Tile7.png')
-dirt = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\Tile8.png')
-lt_dirt = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\Tile9.png')
+grass = pygame.image.load(r'PyScroller_Assets\Tile1.png')
+lt_grass = pygame.image.load(r'PyScroller_Assets\Tile2.png')
+rt_grass = pygame.image.load(r'PyScroller_Assets\Tile3.png')
+up_grass = pygame.image.load(r'PyScroller_Assets\Tile4.png')
+dn_grass = pygame.image.load(r'PyScroller_Assets\Tile5.png')
+lone_grass = pygame.image.load(r'PyScroller_Assets\Tile6.png')
+float_grass = pygame.image.load(r'PyScroller_Assets\Tile7.png')
+dirt = pygame.image.load(r'PyScroller_Assets\Tile8.png')
+lt_dirt = pygame.image.load(r'PyScroller_Assets\Tile9.png')
 rt_dirt = pygame.transform.flip(lt_dirt, True, False)
-lone_dirt = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\Tile11.png')
-coin_img = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\coin1.png').convert_alpha()
+lone_dirt = pygame.image.load(r'PyScroller_Assets\Tile11.png')
+coin_img = pygame.image.load(r'PyScroller_Assets\coin1.png').convert_alpha()
 coin_img = pygame.transform.scale(coin_img, (20, 20))
-timer_img = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\timer.png')
+timer_img = pygame.image.load(r'PyScroller_Assets\timer.png')
 timer_img = pygame.transform.scale(timer_img, (20, 24))
-menu_play_img = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\play_btn.png').convert_alpha()
+menu_play_img = pygame.image.load(r'PyScroller_Assets\play_btn.png').convert_alpha()
 menu_play_img = pygame.transform.scale(menu_play_img, (250, 60))
-menu_quit_img = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\quit_btn.png').convert_alpha()
+menu_quit_img = pygame.image.load(r'PyScroller_Assets\quit_btn.png').convert_alpha()
 menu_quit_img = pygame.transform.scale(menu_quit_img, (250, 60))
-game_restart_img = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\restart_btn.png').convert_alpha()
+game_restart_img = pygame.image.load(r'PyScroller_Assets\restart_btn.png').convert_alpha()
 game_restart_img = pygame.transform.scale(game_restart_img, (250, 60))
-game_pause_img = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\pause_btn.png').convert_alpha()
+game_pause_img = pygame.image.load(r'PyScroller_Assets\pause_btn.png').convert_alpha()
 game_pause_img = pygame.transform.scale(game_pause_img, (50, 50))
-game_play_img = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\play2_btn.png').convert_alpha()
+game_play_img = pygame.image.load(r'PyScroller_Assets\play2_btn.png').convert_alpha()
 game_play_img = pygame.transform.scale(game_play_img, (50, 50))
-game_quit_img = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\quit2_btn.png').convert_alpha()
+game_quit_img = pygame.image.load(r'PyScroller_Assets\quit2_btn.png').convert_alpha()
 game_quit_img = pygame.transform.scale(game_quit_img, (50, 50))
-game_restart2_img = pygame.image.load(
-    r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\restart2_btn.png').convert_alpha()
+game_restart2_img = pygame.image.load(r'PyScroller_Assets\restart2_btn.png').convert_alpha()
 game_restart2_img = pygame.transform.scale(game_restart2_img, (50, 50))
-win_img = pygame.image.load(r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\PyScroller\PyScroller_Assets\win_img.png').convert_alpha()
+win_img = pygame.image.load(r'PyScroller_Assets\win_img.png').convert_alpha()
 win_img = pygame.transform.scale(win_img, (500, 86))
 
 
-
+#respawns player character, empties sprite groups
 def reset_level():
     player.reset(470, d_height - 70)
     enemy_group.empty()
@@ -87,7 +67,7 @@ def reset_level():
     return world
 
 
-
+#number association with each tile, builds world using world_data array
 class World():
 
     def __init__(self, data):
@@ -199,6 +179,7 @@ class World():
 
 
 
+#player class that handles movement, gravity, collision with coins/sprites/tiles, maintains timer and wallet
 class Player():
 
     def __init__(self, x, y):
@@ -409,7 +390,7 @@ class Player():
         self.start = False
 
 
-
+#class for projectile fired by player character (will be a slingshot eventually)
 class Rock(pygame.sprite.Sprite):
     def __init__(self, x, y, direction):
         pygame.sprite.Sprite.__init__(self)
@@ -437,7 +418,7 @@ class Rock(pygame.sprite.Sprite):
             rock_group.remove(self)
 
 
-
+#class for projectile fired by sprites
 class Plasma(pygame.sprite.Sprite):
     def __init__(self, x, y, direction):
         pygame.sprite.Sprite.__init__(self)
@@ -469,7 +450,7 @@ class Plasma(pygame.sprite.Sprite):
             plasma_group.remove(self)
 
 
-
+#class that manages range and sight for sprite's ranged attack
 class Tracer(pygame.sprite.Sprite):
     def __init__(self, x, y, direction):
         pygame.sprite.Sprite.__init__(self)
@@ -502,7 +483,7 @@ class Tracer(pygame.sprite.Sprite):
             tracer_group.empty()
 
 
-
+#healthbar class for enemies and player
 class HealthBar():
     def __init__(self, x, y, being):
         self.being = being
@@ -525,7 +506,8 @@ class HealthBar():
         self.rect.y = y
         self.loc_x = 240
         self.loc_y = 5
-
+    
+    #function that checks and displays appropriate health bar for enemies
     def update(self, health, dx, dy, being):
         if being == 'E':
             if health in range(66, 99):
@@ -542,7 +524,8 @@ class HealthBar():
 
             self.rect.x = dx
             self.rect.y = dy
-
+        
+        #function that checks and displays appropriate health bar for player
         if being == 'P':
             if health == 100:
                 self.image = self.images[0]
@@ -576,7 +559,9 @@ class Enemy(pygame.sprite.Sprite):
         image = pygame.image.load(
             r'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\Pyscroller\PyScroller_Assets\wiz1.png').convert_alpha()
         self.image = pygame.transform.scale(image, (65, 60))
-
+        
+        #append images to respective image lists, cycle through them to make enemy animation
+        
         for num in range(1, 5):
             left_img = pygame.image.load(
                 fr'C:\Users\jongr\OneDrive\Desktop\Code\WebRes\Portfolio2\Works\Pyscroller\PyScroller_Assets\wiz{num}.png').convert_alpha()
@@ -748,7 +733,7 @@ class Enemy(pygame.sprite.Sprite):
                     enemy_group.remove(self)
 
 
-
+#class to handle coin animation
 class Coin(pygame.sprite.Sprite):
     def __init__(self, x, y):
         pygame.sprite.Sprite.__init__(self)
@@ -797,7 +782,7 @@ class Coin(pygame.sprite.Sprite):
                 self.direction = 2
 
 
-
+#class to manage buttons, allows use of main menu
 class Button():
     def __init__(self, x, y, image):
         self.image = image
@@ -829,7 +814,7 @@ class Button():
         return action
 
 
-
+#array defining game environment
 world_data = [
     [8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8],
     [8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 8],
@@ -875,7 +860,7 @@ world_data = [
 
 
 
-
+#define game starting conditions, button locations, player location
 play_button = Button(175, 200, menu_play_img)
 quit_button = Button(175, 300, menu_quit_img)
 restart_button = Button(175, 200, game_restart_img)
@@ -905,6 +890,8 @@ font = pygame.font.SysFont("comic sans", 30)
 
 
 running = True
+
+#main game loop
 while running:
     clock.tick(fps)
 
